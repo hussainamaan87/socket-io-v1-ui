@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 
 // Use the Render URL for the backend
-const socket = io('https://socket-io-v1.onrender.com'); // Update with your Render URL
-
+// const socket = io('https://socket-io-v1.onrender.com'); // Update with your Render URL
+const socket = io('http://localhost:5000/');
 const App = () => {
     const [data, setData] = useState({}); // Data for all cities
     const [cities, setCities] = useState([]); // Array of city names
